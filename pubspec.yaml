@@ -44,7 +44,9 @@ dev_dependencies:
   flutter_blue_plus: ^1.35.5
   permission_handler: ^12.0.0+1
   encrypt:
-  pointycastle: 
+  pointycastle:
+  connectivity_plus: ^6.1.4
+  go_router:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

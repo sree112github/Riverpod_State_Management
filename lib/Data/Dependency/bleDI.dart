@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'bleController.dart';
-import 'bleRepository.dart';
-import 'bleService.dart';
+import '../Controller/bleController.dart';
+import '../repository/bleRepository.dart';
+import '../services/BluetoothServices/bleService.dart';
 
 // Service Provider
 final bluetoothServicesProvider = Provider<BluetoothServices>((ref) {

@@ -1,7 +1,7 @@
 
-import 'package:riverpodstatemanagement/bleController.dart';
+import 'package:riverpodstatemanagement/Data/Controller/bleController.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'bleService.dart';
+import '../services/BluetoothServices/bleService.dart';
 
 class BluetoothRepository {
   final BluetoothServices _bluetoothServices;

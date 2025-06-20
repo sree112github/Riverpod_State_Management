@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'bleDI.dart';
+import '../../../Data/Dependency/bleDI.dart';
 
 class BluetoothScreen extends ConsumerWidget {
   final String deviceId;

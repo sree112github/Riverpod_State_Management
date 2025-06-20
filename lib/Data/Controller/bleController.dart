@@ -1,7 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'package:riverpodstatemanagement/encryptioservice.dart';
-import 'bleRepository.dart';
+import 'package:riverpodstatemanagement/Data/services/encryptionServices/encryptioservice.dart';
+import '../repository/bleRepository.dart';
 
 
 class BluetoothState {

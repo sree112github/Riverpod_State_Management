@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpodstatemanagement/blescreen.dart';
+import 'AppCore/Approutes.dart';
+import 'feature/BlutoothScreen/Screen/blescreen.dart';
+import 'feature/LoginScreen/Screen/loginScreen.dart';
 
 
 
@@ -10,15 +12,17 @@ void main(){
 }
 
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return ProviderScope(
-      child: MaterialApp(
-        home: BluetoothScreen(deviceId:'7c:87:ce:2f:ed:82')
-      ),
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider); // watch the router
+
+    return MaterialApp.router(
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
+      title: 'My App',
     );
   }
 }
